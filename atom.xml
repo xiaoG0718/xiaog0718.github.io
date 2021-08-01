@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-08-01T15:48:01.149Z</updated>
+  <updated>2021-08-01T15:56:32.096Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="http://example.com/wiki/hexo%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/"/>
     <id>http://example.com/wiki/hexo%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/</id>
     <published>2021-08-01T15:32:03.000Z</published>
-    <updated>2021-08-01T15:48:01.149Z</updated>
+    <updated>2021-08-01T15:56:32.096Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="如何使用hexo写文章"><a href="#如何使用hexo写文章" class="headerlink" title="如何使用hexo写文章"></a>如何使用hexo写文章</h1><h2 id="1-建立文章指令"><a href="#1-建立文章指令" class="headerlink" title="1.建立文章指令"></a>1.建立文章指令</h2><p>使用下述指令建立一个新的md文件</p><figure class="highlight actionscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexok <span class="keyword">new</span> <span class="string">&quot;title&quot;</span></span><br></pre></td></tr></table></figure><h2 id="2-快捷指令"><a href="#2-快捷指令" class="headerlink" title="2.快捷指令"></a>2.快捷指令</h2><p>CTRL+1/2/3…  = 1/2/3…级标题</p><p>CTRL+t = 插入表格</p><p>ctrl+b = 加粗</p><p>…</p><h2 id="3-保存和更新"><a href="#3-保存和更新" class="headerlink" title="3.保存和更新"></a>3.保存和更新</h2><p>运用指令</p><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo -g <span class="regexp">//</span>更新本地</span><br><span class="line">hexo -d <span class="regexp">//</span>更新到云端</span><br></pre></td></tr></table></figure><h2 id=""><a href="#" class="headerlink" title=""></a></h2>]]></content>
+    <content type="html"><![CDATA[<h1 id="如何使用hexo写文章"><a href="#如何使用hexo写文章" class="headerlink" title="如何使用hexo写文章"></a>如何使用hexo写文章</h1><h2 id="1-建立文章指令"><a href="#1-建立文章指令" class="headerlink" title="1.建立文章指令"></a>1.建立文章指令</h2><p>使用下述指令建立一个新的md文件</p><figure class="highlight actionscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexok <span class="keyword">new</span> <span class="string">&quot;title&quot;</span></span><br></pre></td></tr></table></figure><h2 id="2-快捷指令"><a href="#2-快捷指令" class="headerlink" title="2.快捷指令"></a>2.快捷指令</h2><p>CTRL+1/2/3…  = 1/2/3…级标题</p><p>CTRL+t = 插入表格</p><p>ctrl+b = 加粗</p><p>…</p><h2 id="3-保存和更新"><a href="#3-保存和更新" class="headerlink" title="3.保存和更新"></a>3.保存和更新</h2><p>运用指令</p><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo g <span class="regexp">//</span>更新本地</span><br><span class="line">hexo d <span class="regexp">//</span>更新到云端</span><br></pre></td></tr></table></figure><h2 id=""><a href="#" class="headerlink" title=""></a></h2>]]></content>
     
     
       
