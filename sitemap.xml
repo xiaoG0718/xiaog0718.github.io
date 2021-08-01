@@ -30,13 +30,6 @@
   </url>
   
   <url>
-    <loc>http://example.com/wiki/%E5%89%8D%E7%AB%AF%E6%BC%8F%E6%B4%9E%E8%A1%A5%E5%85%85/</loc>
-    
-    <lastmod>2021-01-13</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://example.com/wiki/JSON%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98/</loc>
     
     <lastmod>2020-12-25</lastmod>
@@ -109,14 +102,14 @@
 
   
   <url>
-    <loc>http://example.com/tags/csrf%E6%BC%8F%E6%B4%9E/</loc>
+    <loc>http://example.com/tags/%E6%84%9F%E8%A7%89%E5%BE%88%E7%B4%AF/</loc>
     <lastmod>2021-08-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://example.com/tags/%E6%84%9F%E8%A7%89%E5%BE%88%E7%B4%AF/</loc>
+    <loc>http://example.com/tags/csrf%E6%BC%8F%E6%B4%9E/</loc>
     <lastmod>2021-08-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -160,14 +153,14 @@
 
   
   <url>
-    <loc>http://example.com/categories/%E6%B8%97%E9%80%8F%E5%AD%A6%E4%B9%A0/</loc>
+    <loc>http://example.com/categories/%E9%9A%8F%E6%83%B3/</loc>
     <lastmod>2021-08-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://example.com/categories/%E9%9A%8F%E6%83%B3/</loc>
+    <loc>http://example.com/categories/%E6%B8%97%E9%80%8F%E5%AD%A6%E4%B9%A0/</loc>
     <lastmod>2021-08-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
