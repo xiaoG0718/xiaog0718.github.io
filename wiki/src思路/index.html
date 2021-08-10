@@ -1,0 +1,95 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description" content=""><title>src思路 | xiaoG</title><link rel="stylesheet" type="text/css" href="/css/style.css?v=0.0.0"><link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/normalize.css/normalize.min.css"><link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/purecss/build/pure-min.min.css"><link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/purecss/build/grids-responsive-min.css"><link rel="stylesheet" href="//cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css"><script type="text/javascript" src="//cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script><link rel="icon" mask="" sizes="any" href="/favicon.ico"><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"><link rel="alternate" type="application/atom+xml" href="/atom.xml"><script type="text/javascript" src="//cdn.jsdelivr.net/npm/clipboard/dist/clipboard.min.js"></script><script type="text/javascript" src="//cdn.jsdelivr.net/gh/codeseven/toastr/build/toastr.min.js"></script><link rel="stylesheet" href="//cdn.jsdelivr.net/gh/codeseven/toastr/build/toastr.min.css"><meta name="generator" content="Hexo 5.2.0"></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">src思路</h1><a id="logo" href="/.">xiaoG</a><p class="description"></p></div><div id="nav-menu"><a class="current" href="/."><i class="fa fa-home"> 首页</i></a><a href="/archives/"><i class="fa fa-archive"> 归档</i></a><a href="/about/"><i class="fa fa-user"> 关于</i></a><a href="/atom.xml"><i class="fa fa-rss"> 订阅</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title">src思路</h1><div class="post-meta">2021-08-05<span> | </span><span class="category"><a href="/categories/%E6%B8%97%E9%80%8F%E5%AD%A6%E4%B9%A0/">渗透学习</a></span></div><a class="disqus-comment-count" data-disqus-identifier="wiki/src思路/" href="/wiki/src%E6%80%9D%E8%B7%AF/#disqus_thread"></a><div class="clear"><div class="toc-article" id="toc"><div class="toc-title">文章目录</div><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#SRC%E6%80%9D%E8%B7%AF"><span class="toc-number">1.</span> <span class="toc-text">SRC思路</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86"><span class="toc-number">1.1.</span> <span class="toc-text">1.信息收集</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-src%E4%BC%81%E4%B8%9A%E7%9A%84ip%E5%AD%90%E5%9F%9F%E5%90%8D%E6%94%B6%E9%9B%86"><span class="toc-number">1.1.1.</span> <span class="toc-text">1.src企业的ip子域名收集</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E6%9F%A5%E7%9C%8B%E7%9B%AE%E6%A0%87%E7%9A%84%E8%B5%84%E4%BA%A7"><span class="toc-number">1.1.2.</span> <span class="toc-text">2.查看目标的资产</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E5%88%A9%E7%94%A8google%E8%BF%9B%E8%A1%8C%E5%9C%A8%E7%BA%BF%E7%BD%91%E7%AB%99%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86"><span class="toc-number">1.1.3.</span> <span class="toc-text">3.利用google进行在线网站信息收集</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-%E4%BD%BF%E7%94%A8github%E6%90%9C%E7%B4%A2%E4%BC%81%E4%B8%9A%E6%B3%84%E9%9C%B2%E7%9A%84%E4%BF%A1%E6%81%AF%E6%BA%90%E7%A0%81"><span class="toc-number">1.1.4.</span> <span class="toc-text">4.使用github搜索企业泄露的信息源码</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-%E6%95%8F%E6%84%9F%E7%9B%AE%E5%BD%95%EF%BC%8C%E7%AB%AF%E5%8F%A3%E6%89%AB%E6%8F%8F%EF%BC%8Ccms%E8%AF%86%E5%88%AB"><span class="toc-number">1.1.5.</span> <span class="toc-text">5.敏感目录，端口扫描，cms识别</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E5%AF%BB%E6%89%BE%E4%B8%8E%E6%95%B0%E6%8D%AE%E5%BA%93%E6%9C%89%E4%BF%A1%E6%81%AF%E4%BA%A4%E4%BA%92%E7%9A%84%E5%9C%B0%E6%96%B9"><span class="toc-number">1.2.</span> <span class="toc-text">2.寻找与数据库有信息交互的地方</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-%E6%BC%8F%E6%B4%9E%E6%89%AB%E6%8F%8F"><span class="toc-number">1.3.</span> <span class="toc-text">3.漏洞扫描</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-%E7%88%86%E7%A0%B4"><span class="toc-number">1.4.</span> <span class="toc-text">4.爆破</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-%E4%B8%9A%E5%8A%A1%E9%80%BB%E8%BE%91%E6%BC%8F%E6%B4%9E%E6%B5%8B%E8%AF%95"><span class="toc-number">1.5.</span> <span class="toc-text">5.业务逻辑漏洞测试</span></a></li></ol></li></ol></div></div><div class="post-content"><h1 id="SRC思路"><a href="#SRC思路" class="headerlink" title="SRC思路"></a>SRC思路</h1><h2 id="1-信息收集"><a href="#1-信息收集" class="headerlink" title="1.信息收集"></a>1.信息收集</h2><h3 id="1-src企业的ip子域名收集"><a href="#1-src企业的ip子域名收集" class="headerlink" title="1.src企业的ip子域名收集"></a>1.src企业的ip子域名收集</h3><p>1.通过fofa，钟馗之眼，shodan等搜集子域名。</p>
+<p>2.通过oneforall或subDomainsBrute来收集</p>
+<p>​    subDomainsBrute：</p>
+<p>​    –version 显示版本号</p>
+<p>​    -h 帮助</p>
+<p>​    -f FILE 暴力猜解的字典，默认使用自带的subnames.txt</p>
+<p>​    –full 全扫描，使用subnames_full.txt</p>
+<p>​    -i 忽略不想采集的ip地址</p>
+<p>​    -t 扫描的线程数，默认200</p>
+<p>​    -p 扫描的进程数，默认6</p>
+<p>​    -o 输出文件的名称</p>
+<p>​    eg.创建20个线程访问报读，将结果保存到baidu.txt</p>
+<p>​    python subDomainsBrute.py -t 20 <a href="https://link.zhihu.com/?target=http://baidu.com">http://baidu.com</a> -o baidu.txt</p>
+<h3 id="2-查看目标的资产"><a href="#2-查看目标的资产" class="headerlink" title="2.查看目标的资产"></a>2.查看目标的资产</h3><p>可以通过小蓝本搜索，可以得到备案网站，APP，小程序，公众号，甚至地址等等。</p>
+<p>小蓝本：<a target="_blank" rel="noopener" href="https://www.xiaolanben.com/">https://www.xiaolanben.com/</a></p>
+<p>可以利用goboy进行资产的绘测。</p>
+<h3 id="3-利用google进行在线网站信息收集"><a href="#3-利用google进行在线网站信息收集" class="headerlink" title="3.利用google进行在线网站信息收集"></a>3.利用google进行在线网站信息收集</h3><p>比较常用的Google语法：</p>
+<p>inurl:login|admin|manage|member|admin_login|login_admin|system|login|user|main|cms 寻找后台登录</p>
+<p>site:域名 intext:管理|后台|登陆|用户名|密码|验证码|系统|帐号|admin|login|sys|managetem|password|username 同上</p>
+<p>inurl:aspx|jsp|php|asp 寻找注入点</p>
+<p>inurl:file|load|editor|Files 寻找上传点</p>
+<p>inurl:ewebeditor|editor|uploadfile|eweb|edit 寻找web编辑器</p>
+<p>filetype:mdb|asp|# 寻找数据库</p>
+<p>site:xxx.com intext:@xxx.com／intext:@xxx.com 寻找邮箱</p>
+<h3 id="4-使用github搜索企业泄露的信息源码"><a href="#4-使用github搜索企业泄露的信息源码" class="headerlink" title="4.使用github搜索企业泄露的信息源码"></a>4.使用github搜索企业泄露的信息源码</h3><p>GitHub语法：</p>
+<p>1.q+关键字</p>
+<p>2.in:file,path 在文件名和路径中搜索包含关键字信息</p>
+<p>3.repo:项目名 在指定项目中搜索包含敏感信息的文件</p>
+<p>或者使用工具进行搜索</p>
+<h3 id="5-敏感目录，端口扫描，cms识别"><a href="#5-敏感目录，端口扫描，cms识别" class="headerlink" title="5.敏感目录，端口扫描，cms识别"></a>5.敏感目录，端口扫描，cms识别</h3><p>使用御剑，k8等工具进行敏感目录扫描</p>
+<p>使用nmap进行端口扫描，常用语法 nmap -sS -n -A 域名</p>
+<p>cms识别方法</p>
+<p>国内:<a target="_blank" rel="noopener" href="http://whatweb.bugscaner.com/">http://whatweb.bugscaner.com/</a></p>
+<p>​        <a target="_blank" rel="noopener" href="http://finger.tidesec.net/">http://finger.tidesec.net/</a></p>
+<p>​        <a target="_blank" rel="noopener" href="https://www.yunsee.cn/3">https://www.yunsee.cn/3</a></p>
+<p>国外:<a target="_blank" rel="noopener" href="https://whatcms.org/">https://whatcms.org/</a></p>
+<p>​        <a target="_blank" rel="noopener" href="https://cmsdetect.com/">https://cmsdetect.com/</a></p>
+<p>​        <a target="_blank" rel="noopener" href="https://itrack.ru/whatcms/">https://itrack.ru/whatcms/</a></p>
+<h2 id="2-寻找与数据库有信息交互的地方"><a href="#2-寻找与数据库有信息交互的地方" class="headerlink" title="2.寻找与数据库有信息交互的地方"></a>2.寻找与数据库有信息交互的地方</h2><p>根据前面得到的信息，寻找与数据库有交互的地方。</p>
+<p>比如后台，登录页面，查询信息，页面参数等地方。</p>
+<h2 id="3-漏洞扫描"><a href="#3-漏洞扫描" class="headerlink" title="3.漏洞扫描"></a>3.漏洞扫描</h2><p>sql注入可以使用sqlmap进行注入</p>
+<p>xss漏洞可以利用Xsstrike工具以及Burp suite插件之xss Validator</p>
+<p>漏洞的扫描可以利用burpsuit+xary和awvs+xary</p>
+<h2 id="4-爆破"><a href="#4-爆破" class="headerlink" title="4.爆破"></a>4.爆破</h2><p>爆破使用burpsuite抓包爆破</p>
+<p>验证码绕过爆破可以利用tesserocr+burpsuite</p>
+<h2 id="5-业务逻辑漏洞测试"><a href="#5-业务逻辑漏洞测试" class="headerlink" title="5.业务逻辑漏洞测试"></a>5.业务逻辑漏洞测试</h2><p>有登录后的垂直越权，水平越权，及未授权访问</p>
+<p>验证码的重复验证导致短信轰炸</p>
+<p>支付漏洞，抓包改金额，活动褥羊毛</p>
+<p>密码找回模块和登录模块的问题</p>
+</div><div class="tags"><a href="/tags/%E6%B8%97%E9%80%8F/"><i class="fa fa-tag"></i>渗透</a></div><div class="post-nav"><a class="pre" href="/wiki/nmap%E5%B8%B8%E7%94%A8%E5%8F%82%E6%95%B0/">nmap常用参数</a><a class="next" href="/wiki/hexo%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/">hexo使用指南</a></div><div id="disqus_thread"><div class="btn_click_load"><button class="disqus_click_btn">阅读评论（请确保 Disqus 可以正常加载）</button></div><script type="text/javascript">var disqus_config = function () {
+    this.page.url = 'http://example.com/wiki/src思路/';
+    this.page.identifier = 'wiki/src思路/';
+    this.page.title = 'src思路';
+  };</script><script type="text/javascript" id="disqus-lazy-load-script">$.ajax({
+url: 'https://disqus.com/next/config.json',
+timeout: 2500,
+type: 'GET',
+success: function(){
+  var d = document;
+  var s = d.createElement('script');
+  s.src = '//xiaog## Your disqus_shortname, e.g. username.disqus.com/embed.js';
+  s.setAttribute('data-timestamp', + new Date());
+  (d.head || d.body).appendChild(s);
+  $('.disqus_click_btn').css('display', 'none');
+},
+error: function() {
+  $('.disqus_click_btn').css('display', 'block');
+}
+});</script><script type="text/javascript" id="disqus-click-load">$('.btn_click_load').click(() => {  //click to load comments
+    (() => { // DON'T EDIT BELOW THIS LINE
+        var d = document;
+        var s = d.createElement('script');
+        s.src = '//xiaog## Your disqus_shortname, e.g. username.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', + new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+    $('.disqus_click_btn').css('display','none');
+});</script><script type="text/javascript" id="disqus-count-script">$(function() {
+     var xhr = new XMLHttpRequest();
+     xhr.open('GET', '//disqus.com/next/config.json', true);
+     xhr.timeout = 2500;
+     xhr.onreadystatechange = function () {
+       if (xhr.readyState === 4 && xhr.status === 200) {
+         $('.post-meta .post-comments-count').show();
+         var s = document.createElement('script');
+         s.id = 'dsq-count-scr';
+         s.src = 'https://xiaog## Your disqus_shortname, e.g. username.disqus.com/count.js';
+         s.async = true;
+         (document.head || document.body).appendChild(s);
+       }
+     };
+     xhr.ontimeout = function () { xhr.abort(); };
+     xhr.send(null);
+   });
+</script></div></div></div></div><div class="pure-u-1-4 hidden_mid_and_down"><div id="sidebar"><div class="widget"><form class="search-form" action="//www.google.com/search" method="get" accept-charset="utf-8" target="_blank"><input type="text" name="q" maxlength="20" placeholder="Search"/><input type="hidden" name="sitesearch" value="http://example.com"/></form></div><div class="widget"><div class="widget-title"><i class="fa fa-folder-o"> 分类</i></div><ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%97%A5%E5%B8%B8/">日常</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%B8%97%E9%80%8F%E5%AD%A6%E4%B9%A0/">渗透学习</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E9%9A%8F%E6%83%B3/">随想</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-star-o"> 标签</i></div><div class="tagcloud"><a href="/tags/%E6%84%9F%E8%A7%89%E5%BE%88%E7%B4%AF/" style="font-size: 15px;">感觉很累</a> <a href="/tags/csrf%E6%BC%8F%E6%B4%9E/" style="font-size: 15px;">csrf漏洞</a> <a href="/tags/JSON%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98/" style="font-size: 15px;">JSON相关问题</a> <a href="/tags/%E6%97%A5%E5%B8%B8/" style="font-size: 15px;">日常</a> <a href="/tags/sql%E6%B3%A8%E5%85%A5/" style="font-size: 15px;">sql注入</a> <a href="/tags/%E6%B8%97%E9%80%8F/" style="font-size: 15px;">渗透</a> <a href="/tags/xss/" style="font-size: 15px;">xss</a> <a href="/tags/%E9%9A%8F%E6%83%B3/" style="font-size: 15px;">随想</a></div></div><div class="widget"><div class="widget-title"><i class="fa fa-file-o"> 最近文章</i></div><ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/wiki/nmap%E5%B8%B8%E7%94%A8%E5%8F%82%E6%95%B0/">nmap常用参数</a></li><li class="post-list-item"><a class="post-list-link" href="/wiki/src%E6%80%9D%E8%B7%AF/">src思路</a></li><li class="post-list-item"><a class="post-list-link" href="/wiki/hexo%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/">hexo使用指南</a></li><li class="post-list-item"><a class="post-list-link" href="/wiki/ssrf%E4%B8%8EURL%E9%87%8D%E5%AE%9A%E5%90%91Bypass/">ssrf与URL重定向Bypass</a></li><li class="post-list-item"><a class="post-list-link" href="/wiki/ssrf/">ssrf</a></li><li class="post-list-item"><a class="post-list-link" href="/wiki/JSON%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98/">JSON相关问题</a></li><li class="post-list-item"><a class="post-list-link" href="/wiki/CSRF%E6%BC%8F%E6%B4%9E/">CSRF漏洞</a></li><li class="post-list-item"><a class="post-list-link" href="/wiki/xss%E6%BC%8F%E6%B4%9E/">xss漏洞</a></li><li class="post-list-item"><a class="post-list-link" href="/wiki/2020-12-8/">2020-12-8</a></li><li class="post-list-item"><a class="post-list-link" href="/wiki/sql%E6%B3%A8%E5%85%A5%E6%80%BB%E7%BB%93/">sql注入总结</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-comment-o"> 最近评论</i></div><script type="text/javascript" src="//xiaog## Your disqus_shortname, e.g. username.disqus.com/recent_comments_widget.js?num_items=5&amp;hide_avatars=1&amp;avatar_size=32&amp;excerpt_length=20&amp;hide_mods=1"></script></div><div class="widget"><div class="widget-title"><i class="fa fa-external-link"> 友情链接</i></div><ul></ul><a href="https://www.google.com" title="google" target="_blank">google</a><ul></ul><a href="https://www.github.com" title="github" target="_blank">github</a></div></div></div><div class="pure-u-1 pure-u-md-3-4"><div id="footer">Copyright © 2021 <a href="/." rel="nofollow">xiaoG.</a> Powered by<a rel="nofollow" target="_blank" href="https://hexo.io"> Hexo.</a><a rel="nofollow" target="_blank" href="https://github.com/tufu9441/maupassant-hexo"> Theme</a> by<a rel="nofollow" target="_blank" href="https://github.com/pagecho"> Cho.</a></div></div></div><a class="show" id="rocket" href="#top"></a><script type="text/javascript" src="/js/totop.js?v=0.0.0" async></script><script type="text/javascript" src="//cdn.jsdelivr.net/gh/fancyapps/fancybox/dist/jquery.fancybox.min.js" async></script><script type="text/javascript" src="/js/fancybox.js?v=0.0.0" async></script><link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox/dist/jquery.fancybox.min.css"><script type="text/javascript" src="/js/love.js"></script><script type="text/javascript" src="/js/copycode.js" successtext="复制成功!"></script><link rel="stylesheet" type="text/css" href="/css/copycode.css"><script type="text/javascript" src="/js/codeblock-resizer.js?v=0.0.0"></script><script type="text/javascript" src="/js/smartresize.js?v=0.0.0"></script></div><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"model":{"jsonPath":"/live2dw/assets/miku.model.json"},"display":{"position":"right","width":200,"height":600},"mobile":{"show":true},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body></html>
