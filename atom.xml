@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-08-10T03:45:04.208Z</updated>
+  <updated>2021-08-16T06:49:21.032Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,54 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>awv![1](D:![2](D:\blog\hexo\blog\source\_posts\awvs的使用\2.png)\blog\hexo\blog\source\_posts\awvs的使用\1.png)s的使用</title>
+    <link href="http://example.com/wiki/awvs%E7%9A%84%E4%BD%BF%E7%94%A8/"/>
+    <id>http://example.com/wiki/awvs%E7%9A%84%E4%BD%BF%E7%94%A8/</id>
+    <published>2021-08-15T13:52:08.000Z</published>
+    <updated>2021-08-16T06:49:21.032Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="AWVS的基本使用"><a href="#AWVS的基本使用" class="headerlink" title="AWVS的基本使用"></a>AWVS的基本使用</h2><h3 id="1-点击Targets，点击Add-Targets"><a href="#1-点击Targets，点击Add-Targets" class="headerlink" title="1.点击Targets，点击Add  Targets"></a>1.点击Targets，点击Add  Targets</h3><p><img src="/wiki/awvs%E7%9A%84%E4%BD%BF%E7%94%A8/blog\hexo\blog\source_posts\awvs的使用\01.png" alt="01"></p><h3 id="2-输入目标网址，点击Add-Targets"><a href="#2-输入目标网址，点击Add-Targets" class="headerlink" title="2.输入目标网址，点击Add Targets"></a>2.输入目标网址，点击Add Targets</h3><p><img src="/wiki/awvs%E7%9A%84%E4%BD%BF%E7%94%A8/blog\hexo\blog\source_posts\awvs的使用\02.png" alt="02"></p><h3 id="3-点击网址进行扫描配置"><a href="#3-点击网址进行扫描配置" class="headerlink" title="3.点击网址进行扫描配置"></a>3.点击网址进行扫描配置</h3><p><img src="/wiki/awvs%E7%9A%84%E4%BD%BF%E7%94%A8/blog\hexo\blog\source_posts\awvs的使用\03.png" alt="03"></p><h3 id="4-扫描等级，默认为普通"><a href="#4-扫描等级，默认为普通" class="headerlink" title="4.扫描等级，默认为普通"></a>4.扫描等级，默认为普通</h3><p><img src="/wiki/awvs%E7%9A%84%E4%BD%BF%E7%94%A8/blog\hexo\blog\source_posts\awvs的使用\04.png" alt="04"></p><h3 id="5-勾选set-login，选择Use-pre-recorded-login-sequence"><a href="#5-勾选set-login，选择Use-pre-recorded-login-sequence" class="headerlink" title="5.勾选set login，选择Use pre-recorded login sequence"></a>5.勾选set login，选择Use pre-recorded login sequence</h3><p><img src="/wiki/awvs%E7%9A%84%E4%BD%BF%E7%94%A8/blog\hexo\blog\source_posts\awvs的使用\05.png" alt="05"></p><h3 id="6-点击下面的Launch-Login-Sequence-Recorder进行录制，录制进行登录的过程，输入用户名，密码，登录后保存文件"><a href="#6-点击下面的Launch-Login-Sequence-Recorder进行录制，录制进行登录的过程，输入用户名，密码，登录后保存文件" class="headerlink" title="6.点击下面的Launch Login Sequence Recorder进行录制，录制进行登录的过程，输入用户名，密码，登录后保存文件"></a>6.点击下面的Launch Login Sequence Recorder进行录制，录制进行登录的过程，输入用户名，密码，登录后保存文件</h3><p><img src="/wiki/awvs%E7%9A%84%E4%BD%BF%E7%94%A8/blog\hexo\blog\source_posts\awvs的使用\06.png" alt="06"></p><h3 id="7-点击对应的文件夹按钮，选中刚才保存的录制脚本文件，然后点击save"><a href="#7-点击对应的文件夹按钮，选中刚才保存的录制脚本文件，然后点击save" class="headerlink" title="7.点击对应的文件夹按钮，选中刚才保存的录制脚本文件，然后点击save"></a>7.点击对应的文件夹按钮，选中刚才保存的录制脚本文件，然后点击save</h3><p><img src="/wiki/awvs%E7%9A%84%E4%BD%BF%E7%94%A8/blog\hexo\blog\source_posts\awvs的使用\07.png" alt="07"></p><h3 id="8-勾选，进行扫描"><a href="#8-勾选，进行扫描" class="headerlink" title="8.勾选，进行扫描"></a>8.勾选，进行扫描</h3><p><img src="/wiki/awvs%E7%9A%84%E4%BD%BF%E7%94%A8/blog\hexo\blog\source_posts\awvs的使用\08.png" alt="08"></p><h3 id="9-然后再扫描选中中选中对应报表结果类型，默认无，选中第一个"><a href="#9-然后再扫描选中中选中对应报表结果类型，默认无，选中第一个" class="headerlink" title="9.然后再扫描选中中选中对应报表结果类型，默认无，选中第一个"></a>9.然后再扫描选中中选中对应报表结果类型，默认无，选中第一个</h3><p><img src="/wiki/awvs%E7%9A%84%E4%BD%BF%E7%94%A8/blog\hexo\blog\source_posts\awvs的使用\09.png" alt="09"></p><h3 id="10-跳至页面，等待扫描结束"><a href="#10-跳至页面，等待扫描结束" class="headerlink" title="10.跳至页面，等待扫描结束"></a>10.跳至页面，等待扫描结束</h3><p><img src="/wiki/awvs%E7%9A%84%E4%BD%BF%E7%94%A8/blog\hexo\blog\source_posts\awvs的使用\10.png" alt="10"></p><h3 id="11-扫描完成后下载报表"><a href="#11-扫描完成后下载报表" class="headerlink" title="11.扫描完成后下载报表"></a>11.扫描完成后下载报表</h3><p><img src="/wiki/awvs%E7%9A%84%E4%BD%BF%E7%94%A8/blog\hexo\blog\source_posts\awvs的使用\11.png" alt="11"></p><h2 id="AWVS-Xray"><a href="#AWVS-Xray" class="headerlink" title="AWVS+Xray"></a>AWVS+Xray</h2><h3 id="1-打开powershell，配置xray"><a href="#1-打开powershell，配置xray" class="headerlink" title="1.打开powershell，配置xray"></a>1.打开powershell，配置xray</h3><p>xray开启监听</p><figure class="highlight jboss-cli"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">./xray</span> webscan <span class="params">--listen</span> 0.0.0.0<span class="function">:7777</span> <span class="params">--html-output</span> awvs.html</span><br></pre></td></tr></table></figure><h3 id="2-配置AWVS代理转发"><a href="#2-配置AWVS代理转发" class="headerlink" title="2.配置AWVS代理转发"></a>2.配置AWVS代理转发</h3><p><img src="/wiki/awvs%E7%9A%84%E4%BD%BF%E7%94%A8/blog\hexo\blog\source_posts\awvs的使用\1.png" alt="1"></p><h3 id="2-开始扫描，选择仅爬虫"><a href="#2-开始扫描，选择仅爬虫" class="headerlink" title="2.开始扫描，选择仅爬虫"></a>2.开始扫描，选择仅爬虫</h3><p><img src="/wiki/awvs%E7%9A%84%E4%BD%BF%E7%94%A8/blog\hexo\blog\source_posts\awvs的使用\2.png" alt="2"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;AWVS的基本使用&quot;&gt;&lt;a href=&quot;#AWVS的基本使用&quot; class=&quot;headerlink&quot; title=&quot;AWVS的基本使用&quot;&gt;&lt;/a&gt;AWVS的基本使用&lt;/h2&gt;&lt;h3 id=&quot;1-点击Targets，点击Add-Targets&quot;&gt;&lt;a href=&quot;#</summary>
+      
+    
+    
+    
+    <category term="渗透" scheme="http://example.com/categories/%E6%B8%97%E9%80%8F/"/>
+    
+    
+    <category term="渗透" scheme="http://example.com/tags/%E6%B8%97%E9%80%8F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>nmap的使用</title>
+    <link href="http://example.com/wiki/nmap%E7%9A%84%E4%BD%BF%E7%94%A8/"/>
+    <id>http://example.com/wiki/nmap%E7%9A%84%E4%BD%BF%E7%94%A8/</id>
+    <published>2021-08-10T04:17:54.000Z</published>
+    <updated>2021-08-10T04:17:54.764Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><blockquote><ul><li><a href></a></li><li><a href></a></li></ul></blockquote>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;参考资料&quot;&gt;&lt;a href=&quot;#参考资料&quot; class=&quot;headerlink&quot; title=&quot;参考资料&quot;&gt;&lt;/a&gt;参考资料&lt;/h2&gt;&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/u</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>src思路</title>
