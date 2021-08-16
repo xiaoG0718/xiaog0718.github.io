@@ -86,14 +86,14 @@
   </url>
   
   <url>
-    <loc>https://xiaog0718.github.io/about/index.html</loc>
+    <loc>https://xiaog0718.github.io/categories/index.html</loc>
     
     <lastmod>2020-12-05</lastmod>
     
   </url>
   
   <url>
-    <loc>https://xiaog0718.github.io/categories/index.html</loc>
+    <loc>https://xiaog0718.github.io/about/index.html</loc>
     
     <lastmod>2020-12-05</lastmod>
     
@@ -116,6 +116,13 @@
   </url>
   
   <url>
+    <loc>https://xiaog0718.github.io/tags/JSON%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98/</loc>
+    <lastmod>2021-08-16</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://xiaog0718.github.io/tags/csrf%E6%BC%8F%E6%B4%9E/</loc>
     <lastmod>2021-08-16</lastmod>
     <changefreq>daily</changefreq>
@@ -130,21 +137,7 @@
   </url>
   
   <url>
-    <loc>https://xiaog0718.github.io/tags/JSON%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98/</loc>
-    <lastmod>2021-08-16</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://xiaog0718.github.io/tags/%E6%97%A5%E5%B8%B8/</loc>
-    <lastmod>2021-08-16</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://xiaog0718.github.io/tags/sql%E6%B3%A8%E5%85%A5/</loc>
     <lastmod>2021-08-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -159,6 +152,13 @@
   
   <url>
     <loc>https://xiaog0718.github.io/tags/%E9%9A%8F%E6%83%B3/</loc>
+    <lastmod>2021-08-16</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://xiaog0718.github.io/tags/sql%E6%B3%A8%E5%85%A5/</loc>
     <lastmod>2021-08-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
