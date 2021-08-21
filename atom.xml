@@ -6,7 +6,7 @@
   <link href="https://xiaog0718.github.io/atom.xml" rel="self"/>
   
   <link href="https://xiaog0718.github.io/"/>
-  <updated>2021-08-16T11:16:10.492Z</updated>
+  <updated>2021-08-21T03:33:29.987Z</updated>
   <id>https://xiaog0718.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>cmder设置代理</title>
+    <link href="https://xiaog0718.github.io/wiki/cmder%E8%AE%BE%E7%BD%AE%E4%BB%A3%E7%90%86/"/>
+    <id>https://xiaog0718.github.io/wiki/cmder%E8%AE%BE%E7%BD%AE%E4%BB%A3%E7%90%86/</id>
+    <published>2021-08-21T03:29:52.000Z</published>
+    <updated>2021-08-21T03:33:29.987Z</updated>
+    
+    <content type="html"><![CDATA[<p>cmder设置代理很简单，跟linux一样</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">set http_proxy&#x3D;http:&#x2F;&#x2F;127.0.0.1:1080</span><br><span class="line">set https_proxy&#x3D;http:&#x2F;&#x2F;127.0.0.1:1080</span><br><span class="line"></span><br><span class="line">set http_proxy_user&#x3D;user</span><br><span class="line">set http_proxy_pass&#x3D;pass</span><br><span class="line"></span><br><span class="line">set https_proxy_user&#x3D;user</span><br><span class="line">set https_proxy_pass&#x3D;pass</span><br><span class="line"></span><br><span class="line"># 恢复</span><br><span class="line">set http_proxy&#x3D;</span><br><span class="line"></span><br><span class="line">set https_proxy&#x3D;</span><br><span class="line"></span><br><span class="line"># Ubuntu 下命令为 export</span><br><span class="line"># export http_proxy&#x3D;http:&#x2F;&#x2F;127.0.0.1:1080</span><br></pre></td></tr></table></figure><p>注意的是：<strong>cmder中设置的代理会持续到窗口关闭，下次打开新窗口要重新设置，因为不是系统环境变量。</strong></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;cmder设置代理很简单，跟linux一样&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;</summary>
+      
+    
+    
+    
+    <category term="软件" scheme="https://xiaog0718.github.io/categories/%E8%BD%AF%E4%BB%B6/"/>
+    
+    
+    <category term="软件" scheme="https://xiaog0718.github.io/tags/%E8%BD%AF%E4%BB%B6/"/>
+    
+  </entry>
   
   <entry>
     <title>awvs的使用</title>
