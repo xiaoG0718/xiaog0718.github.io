@@ -6,7 +6,7 @@
   <link href="https://xiaog0718.github.io/atom.xml" rel="self"/>
   
   <link href="https://xiaog0718.github.io/"/>
-  <updated>2021-08-21T03:33:29.987Z</updated>
+  <updated>2021-08-22T02:38:39.824Z</updated>
   <id>https://xiaog0718.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>burpsuite小技巧之加密爆破</title>
+    <link href="https://xiaog0718.github.io/wiki/burpsuite%E5%B0%8F%E6%8A%80%E5%B7%A7/"/>
+    <id>https://xiaog0718.github.io/wiki/burpsuite%E5%B0%8F%E6%8A%80%E5%B7%A7/</id>
+    <published>2021-08-22T02:28:34.000Z</published>
+    <updated>2021-08-22T02:38:39.824Z</updated>
+    
+    <content type="html"><![CDATA[<p>当我们要爆破这种比如有base64加密的登录时，需要用burp进行处理</p><p><img src="/wiki/burpsuite%E5%B0%8F%E6%8A%80%E5%B7%A7/burpsuite%E5%B0%8F%E6%8A%80%E5%B7%A7%5C01.png" alt="01"></p><p>先导入字典</p><p><img src="/wiki/burpsuite%E5%B0%8F%E6%8A%80%E5%B7%A7/burpsuite%E5%B0%8F%E6%8A%80%E5%B7%A7%5C02.png" alt="02"></p><p>设置前缀和base64加密</p><p><img src="/wiki/burpsuite%E5%B0%8F%E6%8A%80%E5%B7%A7/burpsuite%E5%B0%8F%E6%8A%80%E5%B7%A7%5C03.png" alt="03"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;当我们要爆破这种比如有base64加密的登录时，需要用burp进行处理&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/wiki/burpsuite%E5%B0%8F%E6%8A%80%E5%B7%A7/burpsuite%E5%B0%8F%E6%8A%80%E5%B7%A7%5C01</summary>
+      
+    
+    
+    
+    <category term="渗透学习" scheme="https://xiaog0718.github.io/categories/%E6%B8%97%E9%80%8F%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+    <category term="渗透" scheme="https://xiaog0718.github.io/tags/%E6%B8%97%E9%80%8F/"/>
+    
+  </entry>
   
   <entry>
     <title>cmder设置代理</title>
